@@ -31,12 +31,12 @@
 
 #### Budowa:
 
-- strona zbudowana została responsywnie dzięki czemu umożliwia swobodne i wygodne korzystanie z niej na każdym urządzeniu:
+- strona została zaprojektowana w sposób responsywny dzięki czemu umożliwia to swobodne i wygodne korzystanie z niej na każdym urządzeniu:
 
-| Mobile                                                     | Tablet                                                                                        | Desktop                                                             |
-| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| <699px                                                     | 700px - 999px                                                                                 | >1000px                                                             |
-| widok mobilny, hamburger menu (pierwotne ułożenie strony), | widok tabletu, pasek nawigacji na górze, dostosowanie czcionek i animacji do rozmiaru ekranu, | widok desktop, dostosowanie czcionek i animacji do rozmiaru ekranu, |
+| Smartphone                                                                                                       | Mobile                                                                                          | Desktop                                                                       |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| < 699px                                                                                                          | 700px - 999px                                                                                   | > 1000px                                                                      |
+| widok przystowany do korzystania na smartphonie, hamburger menu (nawigacja rozwijana) (pierwotny design strony), | widok mobilny, pasek nawigacji na górze, dostosowanie czcionek i animacji do większych ekranów, | widok desktop , dostosowanie czcionek i animacji do komputerów stacjonarnych, |
 
 - użyto znaczników semantycznych,
 
