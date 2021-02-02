@@ -1,0 +1,156 @@
+//==============================================//
+//===// Responsive layout - mobile section //===//
+//==============================================//
+
+@include mobile {
+  //==================//
+  //===// Header //===//
+  //==================//
+
+  header {
+    display: flex;
+    margin: 1.5rem 0 3rem 0;
+  }
+
+  //===// Header > Logo //===//
+
+  .logo {
+    &__link {
+      &--big {
+        font-size: 2.5rem;
+      }
+
+      &--small {
+        font-size: 1.25rem;
+      }
+
+      &--icon {
+        font-size: 1.25rem;
+        margin-left: 0.2em;
+      }
+    }
+  }
+
+  //===// Header > Navigation //===//
+
+  .nav {
+    position: relative;
+    opacity: 1;
+    pointer-events: all;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    animation: none;
+
+    &-toggle {
+      display: none;
+    }
+
+    &__list {
+      background: color(bg);
+      padding: 0;
+    }
+
+    &__item {
+      display: inline-block;
+
+      &--type {
+        & + & {
+          margin: 0 0 0 0.5em;
+        }
+      }
+
+      &--form {
+        margin: 0 0 0 1.25em;
+      }
+    }
+
+    &__link {
+      color: color(txt);
+      font-size: 1.5rem;
+    }
+  }
+
+  //================//
+  //===// Main //===//
+  //================//
+
+  //===// Main > Content //===//
+
+  .content {
+    &__title {
+      font-size: 2.25rem;
+    }
+
+    &__icon-first {
+      font-size: 10rem;
+    }
+
+    &__icon-second {
+      width: 26rem;
+      --virus-size: 26rem;
+    }
+
+    &__text {
+      font-size: 1.125rem;
+
+      &-anim {
+        font-size: 3.75rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.65rem;
+    }
+  }
+
+  //==================//
+  //===// Assets //===//
+  //==================//
+
+  //===// Popup //===//
+
+  .popup {
+    &__title {
+      &--first {
+        font-size: 2.1rem;
+      }
+
+      &--second {
+        font-size: 1.1rem;
+      }
+
+      &--icon {
+        font-size: 1.1rem;
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+    }
+
+    &__text {
+      font-size: 1.35rem;
+
+      & + & {
+        margin-top: 0.5em;
+      }
+
+      &:last-of-type {
+        margin-bottom: 1.8rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.175rem;
+      margin-left: 0.25em;
+    }
+
+    &__circle {
+      top: 55%;
+      font-size: 0.5rem;
+      transform: translateY(-55%);
+    }
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../img/icon.png" />
+    <title>Szczepionki - COVID - AstraZeneca</title>
+  </head>
+  <body>
+    <div class="transition transition--active slide-tr-bl"></div>
+
+    <header>
+      <div class="container container--top">
+        <div class="logo">
+          <span class="logo__wrapper" title="Szczepionki Covid"
+            ><a href="../index.html" class="logo__link logo__link--big">Szczepionki</a
+            ><a href="../index.html" class="logo__link logo__link--small">COVID</a
+            ><a href="../index.html" class="fas fa-syringe logo__link logo__link--icon"></a
+          ></span>
+        </div>
+      </div>
+
+      <div class="nav-toggle">
+        <button class="hamburger">
+          <span class="hamburger__box"><span class="hamburger__inner"></span></span>
+        </button>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--type">
+            <a href="./first.html" class="nav__link" title="Moderna">Moderna</a>
+          </li>
+          <li class="nav__item nav__item--type">
+            <a href="./second.html" class="nav__link nav__link--active" title="AstraZeneca"
+              >AstraZeneca</a
+            >
+          </li>
+          <li class="nav__item nav__item--type">
+            <a href="./third.html" class="nav__link" title="CureVac">CureVac</a>
+          </li>
+          <li class="nav__item nav__item--form">
+            <a href="./form.html" class="nav__link external" target="_blank" title="Zapisz Się!"
+              >Zapisz Się!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="content">
+          <h1 class="content__title">AstraZeneca</h1>
+          <p class="content__text">
+            W grudniu zgodę na awaryjne użycie w Wielkiej Brytanii dostała zgodę szczepionka przeciw
+            COVID-19 opracowana wspólnie przez Uniwersytet Oksfordzki i angielsko-szwedzką firmę
+            AstraZeneca. Szczepienia z użyciem tego preparatu ruszyły na Wyspach 4 stycznia. Do tej
+            pory tę szczepionkę zatwierdziły także Indie oraz Argentyna. Kiedy może to uczynić Unia
+            Europejska? Europejska Agencja Leków prawdopodobnie zezwoli na administrowanie
+            szczepionką AstraZeneca nie wcześniej niż w lutym. Komisja Europejska w zeszłym roku
+            podpisała umowę na dostawę do 400 mln dawek od tego producenta. Preparat ten jest
+            szczepionką wektorową - ten rodzaj technologii medycznej jest stosowany również w innych
+            szczepionkach, np. w tych przeciwko wirusowi Ebola. W odróżnieniu od preparatów
+            Pfizera/BioNTechu czy Moderny, opartych o mRNA, szczepionka AstraZeneca opiera się na
+            nieaktywnej cząstce adenowirusa wywołującego przeziębienie u szympansów. Adenowirus
+            zawiera białko kolca koronawirusa SARS-CoV-2 przez co wywołuje reakcję układu
+            odpornościowego analogiczną do tej, jaką wywołałoby zakażenie koronawirusem. Przy
+            optymalnej dawce jej skuteczność wyniosła ok. 90 proc. Szczepionkę podaje się w dwóch
+            dawkach w odstępie miesiąca. Preparat AstraZeneca jest tańszy i łatwiejszy w dystrybucji
+            od szczepionki firm Pfizer/BioNTech. Może być przechowywany w temperaturze 2-8 stopni
+            Celsjusza przez co najmniej sześć miesięcy. Ta szczepionka jest też o wiele tańsza niż
+            szczepionki mRNA. Jedna dawka kosztuje około 2,75 euro. Dla porównania za dawkę
+            preparatu od Pfizera/BioNTech UE płaci 15,50 euro.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <button class="btn btn--small btn--about show-popup" data-target="#about_page">
+        <i class="fas fa-info-circle"></i> O stronie
+      </button>
+      <p class="footer__text">2021 &copy Mateusz Narowski 3Bi</p>
+    </footer>
+
+    <div class="popup" id="about_page">
+      <div class="popup__overlay show-popup" data-target="#about_page"></div>
+      <div class="popup__inner">
+        <p class="popup__title">
+          <span class="popup__title--first">Szczepionki</span
+          ><span class="popup__title--second">COVID</span
+          ><i class="fas fa-syringe popup__title--icon"></i>
+        </p>
+        <p class="popup__text">
+          <i class="fas fa-info"></i> - Strona informacyjna o szczepionkach przeciwko koronawirusowi
+          (COVID-19).
+        </p>
+        <p class="popup__text">
+          <i class="fab fa-wpforms"></i> - Posiada formularz zapisu na szczepienie.<a
+            href="./form.html"
+            class="popup__link external"
+            target="_blank"
+            title="Zapisz Się!"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </p>
+        <p class="popup__text">
+          <i class="fab fa-github"></i> - Strona została umieszczona również na repozytorium
+          GitHub'a.<a
+            href="https://github.com/Malelus/SzczepionkiCovid"
+            class="popup__link external"
+            target="_blank"
+            title="github.com/Malelus/SzczepionkiCovid"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </p>
+        <p class="popup__subtitle">Autor: Mateusz Narowski</p>
+        <p class="popup__text"><i class="fas fa-circle popup__circle"></i> Klasa: 3Bi</p>
+        <p class="popup__text"><i class="fas fa-circle popup__circle"></i> Grupa: I</p>
+        <p class="popup__text"><i class="far fa-calendar-alt"></i> - 02.02.2021r.</p>
+        <span>
+          <button class="btn btn--medium btn--about show-popup" data-target="#about_page">
+            <i class="fas fa-times btn--close"></i> Zamknij
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <script src="../addons/main.js"></script>
+  </body>
+</html>

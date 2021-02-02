@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../img/icon.png" />
+    <title>Szczepionki - COVID - Zapisz Się!</title>
+  </head>
+  <body>
+    <div class="transition transition--active slide-tr-bl"></div>
+
+    <header>
+      <div class="container container--top">
+        <div class="logo">
+          <span class="logo__wrapper" title="Szczepionki Covid"
+            ><a href="../index.html" class="logo__link logo__link--big">Szczepionki</a
+            ><a href="../index.html" class="logo__link logo__link--small">COVID</a
+            ><a href="../index.html" class="fas fa-syringe logo__link logo__link--icon"></a
+          ></span>
+        </div>
+      </div>
+
+      <div class="nav-toggle">
+        <button class="hamburger">
+          <span class="hamburger__box"><span class="hamburger__inner"></span></span>
+        </button>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--type">
+            <a href="./first.html" class="nav__link" title="Moderna">Moderna</a>
+          </li>
+          <li class="nav__item nav__item--type">
+            <a href="./second.html" class="nav__link" title="AstraZeneca">AstraZeneca</a>
+          </li>
+          <li class="nav__item nav__item--type">
+            <a href="./third.html" class="nav__link" title="CureVac">CureVac</a>
+          </li>
+          <li class="nav__item nav__item--form">
+            <a href="./form.html" class="nav__link nav__link--active external" title="Zapisz Się!"
+              >Zapisz Się!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="content content--form">
+          <h1 class="content__title content__title--form">Zapisz się na szczepionkę!</h1>
+          <form class="form" id="form">
+            <label for="first-name" class="form__label">Imię</label>
+            <input type="text" id="first-name" class="form__input" required />
+            <label for="last-name" class="form__label">Nazwisko</label>
+            <input type="text" id="last-name" class="form__input" required />
+            <label for="phone-num" class="form__label">Numer telefonu</label>
+            <input type="tel" id="phone-num" class="form__input" required />
+            <input
+              type="submit"
+              value="Wyślij"
+              class="btn btn--big btn--form btn--form__send"
+              title="Wyślij formularz"
+            />
+            <input
+              type="reset"
+              value="Wyczyść"
+              class="btn btn--big btn--form btn--form__reset"
+              title="Wyczyść wprowadzone dane"
+            />
+          </form>
+
+          <p class="content__text form__result">
+            Sukces! Twoje zgłoszenie zostało przyjęte, skontaktujemy się z Tobą za pomocą wiadomości
+            SMS.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <button class="btn btn--small btn--about show-popup" data-target="#about_page">
+        <i class="fas fa-info-circle"></i> O stronie
+      </button>
+      <p class="footer__text">2021 &copy Mateusz Narowski 3Bi</p>
+    </footer>
+
+    <div class="popup" id="about_page">
+      <div class="popup__overlay show-popup" data-target="#about_page"></div>
+      <div class="popup__inner">
+        <p class="popup__title">
+          <span class="popup__title--first">Szczepionki</span
+          ><span class="popup__title--second">COVID</span
+          ><i class="fas fa-syringe popup__title--icon"></i>
+        </p>
+        <p class="popup__text">
+          <i class="fas fa-info"></i> - Strona informacyjna o szczepionkach przeciwko koronawirusowi
+          (COVID-19).
+        </p>
+        <p class="popup__text">
+          <i class="fab fa-wpforms"></i> - Posiada formularz zapisu na szczepienie.<a
+            href="./form.html"
+            class="popup__link external"
+            title="Zapisz Się!"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </p>
+        <p class="popup__text">
+          <i class="fab fa-github"></i> - Strona została umieszczona również na repozytorium
+          GitHub'a.<a
+            href="https://github.com/Malelus/SzczepionkiCovid"
+            class="popup__link external"
+            target="_blank"
+            title="github.com/Malelus/SzczepionkiCovid"
+            ><i class="fas fa-external-link-alt"></i
+          ></a>
+        </p>
+        <p class="popup__subtitle">Autor: Mateusz Narowski</p>
+        <p class="popup__text"><i class="fas fa-circle popup__circle"></i> Klasa: 3Bi</p>
+        <p class="popup__text"><i class="fas fa-circle popup__circle"></i> Grupa: I</p>
+        <p class="popup__text"><i class="far fa-calendar-alt"></i> - 02.02.2021r.</p>
+        <span>
+          <button class="btn btn--medium btn--about show-popup" data-target="#about_page">
+            <i class="fas fa-times btn--close"></i> Zamknij
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <script src="../addons/main.js"></script>
+  </body>
+</html>

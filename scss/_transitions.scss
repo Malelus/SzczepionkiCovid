@@ -1,0 +1,205 @@
+//======================//
+//===// Animations //===//
+//======================//
+
+@keyframes logo__text-anim {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo__icon-anim {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes nav-anim-first {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+}
+
+@keyframes nav-anim-second {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+
+  40% {
+    transform: translateY(-16px);
+  }
+
+  60% {
+    transform: translateY(-8px);
+  }
+
+  80% {
+    transform: translateY(-4px);
+  }
+
+  50%,
+  70%,
+  90% {
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes main-icon-anim-first {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translate(200px, -200px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translate(200px, -200px);
+  }
+
+  25%,
+  40% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translate(100px, -100px);
+  }
+
+  60%,
+  65% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translate(90px, -90px);
+  }
+
+  70%,
+  79% {
+    transform: translate(-50%, -50%) translate(200px, -200px);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes main-icon-anim-second {
+  0% {
+    opacity: 0;
+  }
+
+  10%,
+  66% {
+    opacity: 1;
+    width: var(--virus-size);
+  }
+
+  99% {
+    width: 0rem;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes main-text-anim {
+  0%,
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main-text-anim-link {
+  0% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(2.5px);
+  }
+}
+
+@keyframes main-text-anim-link-reverse {
+  0% {
+    opacity: 1;
+    transform: translateX(2.5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+}
+
+@keyframes form__result-anim {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  10% {
+    transform: translateY(0);
+  }
+
+  15%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+//======================================================//
+//===// Page transition (Top Right to Bottom Left) //===//
+//======================================================//
+
+.slide-tr-bl {
+  position: fixed;
+  top: 100%;
+  left: -100%;
+  bottom: 0;
+  z-index: 101;
+  width: 100%;
+  background: color(accent);
+  transition: time(transition-time) ease-out;
+
+  &.transition--active {
+    top: 0;
+    left: 0;
+  }
+}

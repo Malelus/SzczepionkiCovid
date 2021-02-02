@@ -1,0 +1,54 @@
+//==============================//
+//===// Responsive layouts //===//
+//==============================//
+
+@function brake($brakepoint) {
+  @return map-get($brake, $brakepoint);
+}
+
+@mixin mobile {
+  @media screen and (min-width: brake(mobile)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: brake(desktop)) {
+    @content;
+  }
+}
+
+//=================//
+//===// Fonts //===//
+//=================//
+
+@function font($font-name) {
+  @return map-get($font, $font-name);
+}
+
+//==================//
+//===// Colors //===//
+//==================//
+
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}
+
+//===================//
+//===// Timings //===//
+//===================//
+
+@function time($timing-name) {
+  @return map-get($time, $timing-name);
+}
+
+//=======================//
+//===// Mouse hover //===//
+//======================//
+
+@mixin mouse-hover {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}

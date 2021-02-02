@@ -1,0 +1,74 @@
+//===============================================//
+//===// Responsive layout - desktop section //===//
+//===============================================//
+
+@include desktop {
+  //==================//
+  //===// Header //===//
+  //==================//
+
+  //===// Header > Logo //===//
+
+  .logo {
+    &__link {
+      &--big {
+        font-size: 3.45rem;
+      }
+
+      &--small {
+        font-size: 2.2rem;
+      }
+
+      &--icon {
+        font-size: 1.9rem;
+        margin-left: 0.2em;
+      }
+    }
+  }
+
+  //===// Header > Navigation //===//
+
+  .nav {
+    &__item {
+      &--type {
+        & + & {
+          margin: 0 0 0 1.75em;
+        }
+      }
+
+      &--form {
+        margin: 0 0 0 2.5em;
+      }
+    }
+
+    &__link {
+      font-size: 2rem;
+    }
+  }
+
+  //================//
+  //===// Main //===//
+  //================//
+
+  //===// Main > Content //===//
+
+  .content {
+    &__title {
+      font-size: 2.45rem;
+    }
+
+    &__text {
+      font-size: 1.45rem;
+      line-height: 1.45;
+      letter-spacing: 0.04em;
+
+      &-anim {
+        font-size: 4.125rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.9rem;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+//===========================================//
+//===// Brakepoint (Responsive layouts) //===//
+//===========================================//
+
+$brake: (
+  'mobile': 700px,
+  'desktop': 1000px,
+);
+
+//=================//
+//===// Fonts //===//
+//=================//
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$font: (
+  'txt': (
+    'Roboto',
+    sans-serif,
+  ),
+  'title': (
+    'Bebas Neue',
+    cursive,
+  ),
+);
+
+//==================//
+//===// Colors //===//
+//==================//
+
+$color: (
+  'bg': #173840,
+  'txt': #ffffff,
+  'txt-accent': #173840,
+  'accent': #f2b705,
+);
+
+//===================//
+//===// Timings //===//
+//===================//
+
+$time: (
+  /*.25s*/ 'transition-time': 0.25s,
+  /*0.2s*/ 'btn-anim-time': 0.2s,
+  /*0.4s*/ 'popup-time': 0.4s,
+  /*1.0s*/ 'logo-anim-time': 1s,
+  /*.35s*/ 'nav-hide-time': 0.35s,
+  /*0.5s*/ 'nav-show-time': 0.5s,
+  /*5.0s*/ 'main-anim-time': 5s,
+  /*8.0s*/ 'form-result-visibility': 8s,
+  /*.25s*/ 'anim-delay': 0.25s,
+  /*1.1s*/ 'anim-delay--logo-icon': 1.1s
+);
+
+//======================================//
+//===// Exporting variables for js //===//
+//======================================//
+
+:root {
+  --transition-time: #{time(transition-time)};
+  --btn-anim-time: #{time(btn-anim-time)};
+  --popup-time: #{time(popup-time)};
+  --logo-anim-time: #{time(logo-anim-time)};
+  --nav-hide-time: #{time(nav-hide-time)};
+  --nav-show-time: #{time(nav-show-time)};
+  --main-anim-time: #{time(main-anim-time)};
+  --form-result-visibility: #{time(form-result-visibility)};
+  --anim-delay: #{time(anim-delay)};
+  --anim-delay--logo-icon: #{time(anim-delay--logo-icon)};
+}
