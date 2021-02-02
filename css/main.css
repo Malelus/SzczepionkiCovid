@@ -72,6 +72,11 @@ html {
   font-size: 1.35rem;
 }
 
+.btn--icon {
+  pointer-events: none;
+  font-family: 'Font Awesome 5 Free';
+}
+
 .btn--about {
   font-weight: 100;
   border-radius: 50px;

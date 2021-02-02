@@ -25,6 +25,11 @@
     font-size: 1.35rem;
   }
 
+  &--icon {
+    pointer-events: none;
+    font-family: 'Font Awesome 5 Free';
+  }
+
   &--about {
     font-weight: 100;
     border-radius: 50px;
