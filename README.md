@@ -69,7 +69,7 @@
 
 #### Dodatki:
 
-- informacje w konsoli o statusie anmiacji oraz o czasach trwania wszystkich animacji znajdujących się na stronie,
+- informacje w konsoli o statusie animacji oraz o czasach trwania wszystkich animacji znajdujących się na stronie,
 
 - możliwość wyłączenia całkowicie animacji znajdujących się na stronie.
 
