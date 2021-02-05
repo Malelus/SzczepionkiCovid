@@ -292,11 +292,13 @@ main {
         display: inline-block;
         position: absolute;
         opacity: 0;
+        visibility: hidden;
         transform: translateX(-25px);
         animation: main-text-anim-link-reverse time(btn-anim-time) ease forwards;
       }
 
       &:hover &--third {
+        visibility: visible;
         animation: main-text-anim-link time(btn-anim-time) ease forwards;
       }
     }

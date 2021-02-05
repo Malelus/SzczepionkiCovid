@@ -166,11 +166,13 @@
   bottom: 0;
   z-index: 999;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   transition: opacity time(popup-time);
 
   &.popup--active {
     opacity: 1;
+    visibility: visible;
     pointer-events: all;
   }
 

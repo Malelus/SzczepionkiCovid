@@ -217,6 +217,7 @@ html {
   bottom: 0;
   z-index: 999;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
@@ -224,6 +225,7 @@ html {
 
 .popup.popup--active {
   opacity: 1;
+  visibility: visible;
   pointer-events: all;
 }
 
@@ -978,6 +980,7 @@ main {
   display: inline-block;
   position: absolute;
   opacity: 0;
+  visibility: hidden;
   -webkit-transform: translateX(-25px);
           transform: translateX(-25px);
   -webkit-animation: main-text-anim-link-reverse 0.2s ease forwards;
@@ -985,6 +988,7 @@ main {
 }
 
 .content__text-anim:hover .content__text-anim--third {
+  visibility: visible;
   -webkit-animation: main-text-anim-link 0.2s ease forwards;
           animation: main-text-anim-link 0.2s ease forwards;
 }
