@@ -29,6 +29,7 @@ window.onload = () => {
   // Defining variables array
   const durationsArray = [];
   const varArray = [
+    '--transition-static',
     '--transition-time',
     '--btn-anim-time',
     '--popup-time',
@@ -61,7 +62,7 @@ window.onload = () => {
 
   // Setting own variable for transition time
   const timeTransition = durationsArray[0] * 1000;
-  const timeFormResult = durationsArray[7] * 1000;
+  const timeFormResult = durationsArray[8] * 1000;
 
   // Setting style for console timing info
   for (let i = 0; i < varQuantity; i++) {
@@ -99,18 +100,18 @@ window.onload = () => {
     console.log(`# Animations are ` + motionStatus + `\n\n`);
     console.log(`# Page transition:`);
     console.log(`  - static screen: ` + durationsArray[0]);
-    console.log(`  - transition: ` + durationsArray[0]);
-    console.log(`# Button animation time: ` + durationsArray[1]);
-    console.log(`# Popup time: ` + durationsArray[2]);
-    console.log(`# Logo animation time: ` + durationsArray[3]);
+    console.log(`  - transition: ` + durationsArray[1]);
+    console.log(`# Button animation time: ` + durationsArray[2]);
+    console.log(`# Popup time: ` + durationsArray[3]);
+    console.log(`# Logo animation time: ` + durationsArray[4]);
     console.log(`# Navigation:`);
-    console.log(`  - hide: ` + durationsArray[4]);
-    console.log(`  - show: ` + durationsArray[5]);
-    console.log(`# Main animation: ` + durationsArray[6]);
-    console.log(`# Form result visibility: ` + durationsArray[7]);
+    console.log(`  - hide: ` + durationsArray[5]);
+    console.log(`  - show: ` + durationsArray[6]);
+    console.log(`# Main animation: ` + durationsArray[7]);
+    console.log(`# Form result visibility: ` + durationsArray[8]);
     console.log(`# Delays:`);
-    console.log(`  - default: ` + durationsArray[8]);
-    console.log(`  - logo icon: ` + durationsArray[9]);
+    console.log(`  - default: ` + durationsArray[9]);
+    console.log(`  - logo icon: ` + durationsArray[10]);
   }
 
   //====================//

@@ -38,6 +38,10 @@
 
     @include mouse-hover;
 
+    &:hover .btn--info {
+      transform: scale(1.15, 1.15);
+    }
+
     &:hover .btn--close {
       transform: scale(1.15, 1.15) rotate(180deg);
     }
@@ -71,6 +75,7 @@
     }
   }
 
+  &--info,
   &--close {
     transition: all time(btn-anim-time) ease;
     margin-right: 0.1em;
