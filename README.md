@@ -4,7 +4,7 @@
 
 ---
 
-#### Strona została napisana w edytorze Visual Studio Code używając preprocesora SASS do pisania kodu CSS oraz użyto ikon ze strony https://fontawesome.com/.
+#### Strona została napisana w edytorze Visual Studio Code używając składni SCSS preprocesora SASS do pisania kodu CSS oraz użyto ikon ze strony https://fontawesome.com/.
 
 - czcionki:
   - [Roboto](https://fonts.google.com/specimen/Roboto?query=robot),
