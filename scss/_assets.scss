@@ -11,7 +11,7 @@
   font-family: font(txt);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all time(btn-anim-time) ease;
+  transition: opacity time(btn-anim-time) ease;
 
   &--small {
     font-size: 1rem;
@@ -77,7 +77,7 @@
 
   &--info,
   &--close {
-    transition: all time(btn-anim-time) ease;
+    transition: transform time(btn-anim-time) ease;
     margin-right: 0.1em;
   }
 }
@@ -168,7 +168,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity time(popup-time);
+  transition: opacity time(popup-time), visibility time(popup-time);
 
   &.popup--active {
     opacity: 1;
